@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Sidebar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: lightgray;
+      padding: 10px;
+      float: left;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .content {
+      margin-left: 210px;
+      padding: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .sidebar {
+        width: 100%;
+        float: none;
+      }
+      .content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h3>Menu</h3>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="content">
+    <h2>Welcome</h2>
+    <p>This is the main content area.</p>
+  </div>
+</body>
+</html>
